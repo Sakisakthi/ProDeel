@@ -8,11 +8,22 @@ toggle.addEventListener('change', () => {
 
 
 const paragraph = document.getElementById("edit");
+const lead = document.getElementById("editLead");
+const place = document.getElementById("editPlace");
+
+
 const edt = document.getElementById("edt");
-const sav1 = document.getElementById("sav1");
+const sav1 = document.getElementById("savebtn");
+sav1.style.display="none";
 
 edt.addEventListener("click", function() {
-  paragraph.contentEditable = true;
+  // paragraph.contentEditable = true;
+  lead.contentEditable = true;
+
+  place.contentEditable = true;
+  sav1.style.display="block";
+  edt.style.display="none";
+
 
 } );
 
