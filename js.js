@@ -7,7 +7,7 @@ toggle.addEventListener('change', () => {
 
 
 
-const paragraph = document.getElementById("edit");
+const paragraph = document.getElementById("editname");
 const lead = document.getElementById("editLead");
 const place = document.getElementById("editPlace");
 
@@ -17,7 +17,7 @@ const sav1 = document.getElementById("savebtn");
 sav1.style.display="none";
 
 edt.addEventListener("click", function() {
-  // paragraph.contentEditable = true;
+  paragraph.contentEditable = true;
   lead.contentEditable = true;
 
   place.contentEditable = true;
