@@ -6,25 +6,41 @@
 {
     align-items: center;
 
+
 }
 .navbar-header{
     text-align: center;
     font-size: large;
+    padding-top: 20px;
 }
 
 
+.search
+{
+  position: relative;
+  display: inline-flex;
+  padding-left: 660px;
+}
 .searching
 {
   text-align: center;
-  border-radius: 30px;
-  border-color: aqua;
+  box-sizing: border-box;
+  border-radius: 40px;
+  width: 180px;
   height: 40px;
+  display:inline-flex;
+  position: absolute;
+  border-left-color:  rgb(99, 78, 78) ;
 }
 .Searchbutton
 {
-  background-color: #23b3b3;
-  border-radius: 30px;
-  align-items: center;
+  display:inline-flex;
+  box-sizing: border-box;
+  border-radius: 60px;  
+  padding-top: 5px;
+  cursor: pointer;
+  border-right-color: rgb(99, 78, 78);
+  position: relative;
 }
 
 
@@ -235,100 +251,152 @@ input[type="checkbox"]:focus ~ label{
   justify-self: end;
 }
 
-.myprofile2
-{
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 50px 50px 50px 50px;
-  align-items: center;
-  justify-content: center;
-}
-.myprofile2 h6
-{
-  color: rgb(134, 123, 123);
-  font-size: small;
-  font-weight: 600;
-}
 .item4
 {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  justify-self:normal;
-  align-self:first baseline;
+  display: grid;
+  grid-template-columns: 100px 100px 200px 210px;
+  grid-template-rows: 20px 20px 20px 20px 10px 20px 20px;
+  align-content: center;
+  justify-content: center;
+}
+.fname 
+{
+  grid-column: 1 /1;
+  color: rgb(155, 147, 147);
+  grid-row: 1/1;
+}
+.fname1
+{
+  grid-row: 2/2;
+  grid-column: 1/2;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+}
+.lname 
+{
+  grid-column: 3 /3;
+  grid-row: 1/1;
+  color: rgb(155, 147, 147);
+}
+.lname1
+{
+  grid-row: 2/2;
+  grid-column: 3/3;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+}
+.email 
+{
+  grid-column: 1 /1;
+  grid-row: 3/3;
+  color: rgb(155, 147, 147);
+  margin-top: 5px;
+}
+.email1
+{
+  grid-row: 4/4;
+  grid-column: 1/1;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+  margin-top: 5px;
+}
+.phn
+{
+  grid-column: 3 /3;
+  grid-row: 3/3;
+  color: rgb(155, 147, 147);
+  margin-top: 5px;
+}
+.phn1
+{
+  margin-top: 5px;
+  grid-row: 4/4;
+  grid-column: 3/3;
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+}
+.bio
+{
+  grid-row: 6/6;
+  grid-column: 1/1;
+  color: rgb(155, 147, 147);
+}
+.bio1
+{
+  font-weight: 500;
+  font-style: normal;
+  font-size: medium;
+  grid-row: 7/7;
+  grid-column: 1/1;
+}
+.but
+{
+  position: relative;
+  grid-row: 4/4;
+  grid-column: 4/4;
+ justify-self: end;
+ align-self: flex-end;
 }
 .item5
 {
-  grid-row: 2 / 3;
-  grid-column:2 / 2 ;
-  align-self: baseline;
-}
-.item6
-{
-  grid-row: 3 /3 ;
-  grid-column: 3 / 1;
-  align-self: baseline;
-}
-.item7
-{
-  grid-row: 3 / 3;
-  grid-column: 3 / 2;
-  align-self: baseline;
-}
-.item8
-{
-  grid-row: 4 /4 ;
-  grid-column: 4 / 1;
-  align-self: baseline;
-}
-.item9 
-{
-  grid-row: 3/3;
-  grid-column: 3/3;
-  align-self: center;
-  justify-self: end;
-}
-.myprofile3
-{
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 50px 50px 50px;
-  justify-content: center;
+  grid-template-columns: 100px 100px 200px 210px;
+  grid-template-rows: 20px 20px 20px 20px 20px 20px 20px;
   align-items: center;
+  justify-content: center;
 }
-.myprofile3 h6
+.item5 p
 {
-  color: rgb(134, 123, 123);
-  font-size: small;
-  font-weight: 600;
+  color: rgb(155, 147, 147);
+  font-weight: 500;
 }
-.item10
+.country
 {
-  grid-row: 2 / 2;
-  grid-column: 1 /1;
-  justify-self: baseline;
+  grid-row: 1/1;
+  grid-column: 1/1;
 }
-.item11
+.country1
 {
-  grid-row: 2 / 2;
-  grid-column: 2 / 2;
-  justify-self: baseline;
+  grid-row: 2/2;
+  grid-column: 1/1;
 }
-.item12
+.state
 {
-  grid-row: 3 / 3;
-  grid-column: 1 / 1;
-  justify-self: baseline;
+  grid-row: 1/1;
+  grid-column: 3/3;
 }
-.item13
+.state1
 {
-  grid-row: 3 / 3;
-  grid-column: 2 / 2;
-  justify-self: baseline;
+  grid-row: 2/2;
+  grid-column: 3/3;
 }
-.item14
+.code
 {
-  grid-row: 2 / 3;
-  grid-column: 3 / 3;
-  align-self: center;
+  grid-row: 4/4;
+  grid-column: 1/1;
+}
+.code1
+{
+  grid-row: 5/5;
+  grid-column: 1/1;
+}
+.taxid
+{
+  grid-row: 4/4;
+  grid-column: 3/3;
+}
+.taxid1
+{
+  grid-row: 5/5;
+  grid-column: 3/3;
+}
+.but1
+{
+  grid-row: 4/4;
+  grid-column: 4/4;
   justify-self: end;
 }
